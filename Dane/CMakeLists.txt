@@ -6,6 +6,6 @@ endif()
 
 project(Dane VERSION 1.0.0 LANGUAGES CXX)
 
-set(SOURCE_FILES src/Test.cpp)
+set(SOURCE_FILES src/Dane/Application.cpp)
 
 add_library(${PROJECT_NAME} SHARED ${SOURCE_FILES})

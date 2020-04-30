@@ -1,5 +1,6 @@
 #!/bin/sh
 
+rm ./app.out
 cd Dane
 cmake .
 make
