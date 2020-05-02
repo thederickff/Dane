@@ -12,11 +12,11 @@ namespace Dane {
     
     static void Init();
 
-    inline static std::shared_ptr<realog::Logger> &GetCoreLogger() { return s_CoreLogger; }
-    inline static std::shared_ptr<realog::Logger> &GetClientLogger() { return s_ClientLogger; }
+    inline static std::shared_ptr<Realog::Logger> &GetCoreLogger() { return s_CoreLogger; }
+    inline static std::shared_ptr<Realog::Logger> &GetClientLogger() { return s_ClientLogger; }
   private:
-    static std::shared_ptr<realog::Logger> s_CoreLogger;
-    static std::shared_ptr<realog::Logger> s_ClientLogger;
+    static std::shared_ptr<Realog::Logger> s_CoreLogger;
+    static std::shared_ptr<Realog::Logger> s_ClientLogger;
   };
 }
 
