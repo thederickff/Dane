@@ -1,7 +1,7 @@
 #ifndef __Dane_Log__
 #define __Dane_Log__
 
-#include "spdlog/spdlog.h"
+#include "realog.hpp"
 
 #include <memory>
 
@@ -12,11 +12,11 @@ namespace Dane {
     
     static void Init();
 
-    inline static std::shared_ptr<spdlog::logger> &GetCoreLogger() { return s_CoreLogger; }
-    inline static std::shared_ptr<spdlog::logger> &GetClientLogger() { return s_ClientLogger; }
+    inline static std::shared_ptr<realog::Logger> &GetCoreLogger() { return s_CoreLogger; }
+    inline static std::shared_ptr<realog::Logger> &GetClientLogger() { return s_ClientLogger; }
   private:
-    static std::shared_ptr<spdlog::logger> s_CoreLogger;
-    static std::shared_ptr<spdlog::logger> s_ClientLogger;
+    static std::shared_ptr<realog::Logger> s_CoreLogger;
+    static std::shared_ptr<realog::Logger> s_ClientLogger;
   };
 }
 

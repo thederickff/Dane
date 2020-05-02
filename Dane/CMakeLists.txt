@@ -8,6 +8,6 @@ project(Dane VERSION 1.0.0 LANGUAGES CXX)
 
 set(SOURCE_FILES src/Dane/Application.cpp src/Dane/Log.cpp)
 
-include_directories(${CMAKE_SOURCE_DIR}/vendor/spdlog/include)
+include_directories(${CMAKE_SOURCE_DIR}/vendor/realog)
 
 add_library(${PROJECT_NAME} SHARED ${SOURCE_FILES})
