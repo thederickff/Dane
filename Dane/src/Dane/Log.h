@@ -27,4 +27,11 @@ namespace Dane {
 #define DN_CORE_TRACE(...) Dane::Log::GetCoreLogger()->trace(__VA_ARGS__)
 #define DN_CORE_WARNING(...) Dane::Log::GetCoreLogger()->warn(__VA_ARGS__)
 
+#define DN_INFO(...) Dane::Log::GetClientLogger()->info(__VA_ARGS__)
+#define DN_DEBUG(...) Dane::Log::GetClientLogger()->debug(__VA_ARGS__)
+#define DN_ERROR(...) Dane::Log::GetClientLogger()->error(__VA_ARGS__)
+#define DN_FATAL(...) Dane::Log::GetClientLogger()->critical(__VA_ARGS__)
+#define DN_TRACE(...) Dane::Log::GetClientLogger()->trace(__VA_ARGS__)
+#define DN_WARNING(...) Dane::Log::GetClientLogger()->warn(__VA_ARGS__)
+
 #endif /* defined(__Dane_Log__) */
