@@ -10,6 +10,7 @@ project(Sandbox VERSION 1.0.0 LANGUAGES CXX)
 set(SOURCE_FILES src/SandboxApp.cpp)
 
 include_directories(${CMAKE_SOURCE_DIR}/../Dane/src)
+include_directories(${CMAKE_SOURCE_DIR}/../Dane/vendor/spdlog/include)
 
 link_directories(${CMAKE_SOURCE_DIR}/../Dane/)
 

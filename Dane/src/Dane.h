@@ -4,6 +4,7 @@
 // For use by Dane Applications
 
 #include "Dane/Application.h"
+#include "Dane/Log.h"
 
 // --------------- Entry Point -----------------
 #include "Dane/EntryPoint.h"
