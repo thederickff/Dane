@@ -40,3 +40,6 @@ myapp
 
 # Others
 imgui.ini
+
+# build
+bin/
